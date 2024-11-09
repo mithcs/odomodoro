@@ -5,7 +5,7 @@ import "core:fmt"
 import "core:os"
 import "core:sys/linux"
 
-INTERVAL :: 10 // seconds
+INTERVAL :: 1500 // seconds
 ODOMODORO :: "/usr/bin/odomodoro"
 
 main :: proc() {

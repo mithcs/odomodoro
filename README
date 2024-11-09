@@ -2,5 +2,4 @@
 
 A POMODORO TIMER WRITTEN IN ODIN
 
-
-For testing, INTERVAL is 10 seconds.
+current interval -> 1500 seconds - 25 minutes
