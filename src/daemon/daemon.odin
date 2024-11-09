@@ -6,7 +6,7 @@ import "core:os"
 import "core:sys/linux"
 
 INTERVAL :: 10 // seconds
-ODOMODORO :: "odomodoro"
+ODOMODORO :: "/usr/bin/odomodoro"
 
 main :: proc() {
     // ref: http://web.archive.org/web/20060603181849/http://www.linuxprofilm.com/articles/linux-daemon-howto.html#s4
