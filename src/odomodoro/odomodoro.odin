@@ -4,14 +4,12 @@ import "vendor:raylib"
 
 SCREEN_WIDTH  :: 1280
 SCREEN_HEIGHT :: 720
-TARGET_FPS    :: 60
+TARGET_FPS    :: 1
 
 main :: proc() {
     input: [1]byte
 
     line: cstring
-
-    raylib.SetConfigFlags({.WINDOW_MAXIMIZED})
 
     raylib.InitWindow(SCREEN_WIDTH, SCREEN_HEIGHT, "odomodoro")
     defer raylib.CloseWindow()

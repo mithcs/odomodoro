@@ -48,10 +48,10 @@ main :: proc() {
         os.exit(1)
     }
 
-    // Close out standard file descriptors as they are useless
-    // linux.close(linux.STDIN_FILENO)
-    // linux.close(linux.STDOUT_FILENO)
-    // linux.close(linux.STDERR_FILENO)
+    // Close out standard file descriptors as they are useless (for daemon)
+    linux.close(linux.STDIN_FILENO)
+    linux.close(linux.STDOUT_FILENO)
+    linux.close(linux.STDERR_FILENO)
 
     // Setup up timer
     time := linux.Time_Spec { INTERVAL, 0 }
