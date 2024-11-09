@@ -55,7 +55,6 @@ main :: proc() {
 
     // Setup up timer
     time := linux.Time_Spec { INTERVAL, 0 }
-    wait := linux.Time_Spec { 2, 0 }
 
     vars: [^]cstring
 
